@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingTop="15dp"
+    android:paddingRight="5dp"
+    android:paddingBottom="25dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:id="@+id/time"
+        android:layout_alignParentEnd="true"
+        android:gravity="center_vertical"
+        android:text="@string/time_default_time"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/contact_name"
+        android:layout_alignTop="@+id/contact_name"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/contact_name"
+        android:id="@+id/contact_name"
+        android:textSize="18sp"
+        android:layout_marginLeft="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:layout_toStartOf="@+id/time"
+        android:paddingLeft="15dp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/hello_world"
+        android:id="@+id/message"
+        android:textSize="12dp"
+        android:maxLength="35"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:singleLine="true"
+        android:paddingBottom="5dp"
+        android:layout_alignStart="@+id/contact_name"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/contact_name"
+        android:layout_alignRight="@+id/time"
+        android:elegantTextHeight="true"
+        android:gravity="center_vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/contact_name"
+        android:layout_alignParentStart="true"
+        android:layout_alignBottom="@+id/message"
+        android:layout_toStartOf="@+id/message"
+        android:layout_alignParentBottom="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentTop="false">
+
+        <view
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            class="tobin.texty.views.RoundImageView"
+            android:id="@+id/contact_badge"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

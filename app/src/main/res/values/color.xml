@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent">#ff3389b2</color>
+    <color name="accent.dark">#ff2d6d94</color>
+    <color name="primaryText">#ff2e3130</color>
+    <color name="color.light">#fff6f6f6</color>
+    <color name="windowBackground">#ffffffff</color>
+
+    <color name="inboxBackground">#33333333</color>
+</resources>

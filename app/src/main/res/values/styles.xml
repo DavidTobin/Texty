@@ -1,0 +1,13 @@
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+
+        <item name="android:colorAccent">@color/accent</item>
+        <item name="android:colorPrimary">@color/accent</item>
+        <item name="android:colorPrimaryDark">@color/accent.dark</item>
+        <item name="android:navigationBarColor">@color/accent</item>
+    </style>
+
+    <style name="AppTheme.Thread" parent="AppTheme">
+        <item name="android:windowBackground">@color/inboxBackground</item>
+    </style>
+</resources>
